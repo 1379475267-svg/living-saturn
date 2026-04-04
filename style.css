@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(80, 90, 132, 0.08), transparent 30%),
+    linear-gradient(180deg, #02030a 0%, #010208 42%, #000106 100%);
+  color: #f4f7ff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+body::before {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(158, 131, 81, 0.08), transparent 22%),
+    radial-gradient(circle at 50% 44%, rgba(105, 145, 204, 0.06), transparent 38%);
+  mix-blend-mode: screen;
+}
+
+body::after {
+  background:
+    radial-gradient(circle at center, transparent 38%, rgba(0, 0, 0, 0.24) 68%, rgba(0, 0, 0, 0.68) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.18));
+}
+
+#scene {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#webcam {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#fullscreen-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: rgba(6, 8, 18, 0.55);
+  color: rgba(245, 247, 255, 0.92);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+#fullscreen-toggle:hover {
+  background: rgba(20, 24, 40, 0.72);
+  border-color: rgba(255, 255, 255, 0.26);
+  transform: translateY(-1px);
+}
