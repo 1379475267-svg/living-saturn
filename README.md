@@ -2,8 +2,9 @@
 
 > ⚠️ This project is a **gesture-control demo**, not a final product.
 
-🔗 **Live Demo:**
-👉 https://1379475267-svg.github.io/living-saturn/
+🔗 **Live Demo / 在线体验：**
+- 🚀 Alibaba Cloud / 阿里云：http://47.109.136.234/projects/living-saturn/
+- 🌐 GitHub Pages：https://1379475267-svg.github.io/living-saturn/
 
 ---
 
@@ -49,7 +50,8 @@ This project is an **experimental demo** that explores the integration of:
 ### 在线体验（推荐）
 
 直接访问：
-👉 https://1379475267-svg.github.io/living-saturn/
+- 🚀 阿里云：http://47.109.136.234/projects/living-saturn/
+- 🌐 GitHub Pages：https://1379475267-svg.github.io/living-saturn/
 
 ---
 
